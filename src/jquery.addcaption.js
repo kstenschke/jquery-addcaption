@@ -33,7 +33,7 @@
 
         var textCaption = this.attr(attrCaption);
 
-        if( textCaption && textCaptiontextCaption.length > 0 ) {
+        if( textCaption && textCaption.length > 0 ) {
             var htmlTransferAttributes;
             if(transferStyle || transferAttributes.length > 0 ) {
                 htmlTransferAttributes = " style=\"";
