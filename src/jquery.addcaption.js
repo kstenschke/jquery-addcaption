@@ -22,6 +22,11 @@
  *  });
  */
 (function($) {
+    $.addcaption = {
+        version:    '1.0.1',
+        config:     {}
+    };
+
     $.fn.addCaption = function(config) {
         config  = typeof config == 'undefined' ? {} : config;
 
