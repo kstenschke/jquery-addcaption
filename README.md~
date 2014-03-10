@@ -15,6 +15,19 @@ Include script *after* the jQuery library (unless you are packaging scripts some
 **Do not include the script directly from GitHub (http://raw.github.com/...).** The file is being served as text/plain and as such being blocked
 in Internet Explorer on Windows 7 for instance (because of the wrong MIME type). Bottom line: GitHub is not a CDN.
 
+## Usage Example
+
+```  jQuery('img').each(function(index,image) {
+          jQuery(img).addCaption({              // Note: all configuration parameters come with a default value and are optional.
+          attrCaption:        'alt'             // attribute in image to take caption text from, or default: "alt"
+          textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
+          textAppend:         'Appended text',
+          transferStyle:      true,             // transfer the "style" attribute from the image to the caption's figure tag?
+          transferCss: ["width"]                // given css attributes are transferred from the image to the caption's wrapping figure
+      });
+  });
+```
+
 ### Version History
 
 * **1.0.0** *2014-03-10*

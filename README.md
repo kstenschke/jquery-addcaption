@@ -1,6 +1,7 @@
 #jquery-addcaption 1.0.0
 
 A jQuery plugin that adds a caption to a given image element.
+
 The caption text is grabbed from a specifiable attribute, e.g. the alt-text of the resp. image.
 Optionally CSS and style attributes can be transferred from that image to the rendered figure tag.
 
@@ -17,18 +18,22 @@ in Internet Explorer on Windows 7 for instance (because of the wrong MIME type).
 
 ## Usage Example
 
-```  jQuery('img').each(function(index,image) {
-          jQuery(img).addCaption({              // Note: all configuration parameters come with a default value and are optional.
-          attrCaption:        'alt'             // attribute in image to take caption text from, or default: "alt"
+Note: all configuration parameters are optional / come with a default value
+
+```javascript
+jQuery('img').each(function(index,image) {
+          jQuery(img).addCaption({              
+          attrCaption:        'alt'             // attribute in image to take caption text from, default: "alt"
           textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
-          textAppend:         'Appended text',
-          transferStyle:      true,             // transfer the "style" attribute from the image to the caption's figure tag?
-          transferCss: ["width"]                // given css attributes are transferred from the image to the caption's wrapping figure
+          textAppend:         'Appended text',  // textPrepend and textAppend default: ""
+          transferStyle:      true,             // transfer the "style" attribute from the image? default: false
+          transferCss: ["width"]                // transfer given css attributes? default: []
       });
   });
 ```
 
-### Version History
+###Version History
 
 * **1.0.0** *2014-03-10*
     - Initial release
+
