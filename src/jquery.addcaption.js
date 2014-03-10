@@ -7,17 +7,17 @@
  * https://github.com/kstenschke/jquery-addcaption
  *
  * Copyright 2014, Kay Stenschke
- * License: MIT LICENSE 
- * http://opensource.org/licenses/MIT
+ * License: GNU General Public License, version 3 (GPL-3.0)
+ * http://www.opensource.org/licenses/gpl-3.0.html
  *
  * Usage Example:
  *  jQuery('img').each(function(index,image) {
- *          jQuery(img).addCaption({              // Note: all configuration parameters come with a default value and are optional.
- *          attrCaption:        'alt'             // attribute in image to take caption text from, or default: "alt"
- *          textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
+ *          jQuery(img).addCaption({                // Note: all configuration parameters come with a default value and are optional.
+ *          attrCaption:        'alt'               // Attribute in image to take caption text from, or default: "alt"
+ *          textPrepend:        'Prepended text',   // Caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
  *          textAppend:         'Appended text',
- *          transferStyle:      true,             // transfer the "style" attribute from the image to the caption's figure tag?
- *          transferCss: ["width"]                // given css attributes are transferred from the image to the caption's wrapping figure
+ *          transferStyle:      true,               // Transfer the "style" attribute from the image to the caption's figure tag?
+ *          transferCss: ["width"]                  // Given CSS attributes are transferred from the image to the caption's wrapping figure
  *      });
  *  });
  */
@@ -25,11 +25,11 @@
     $.fn.addCaption = function(config) {
         config  = typeof config == 'undefined' ? {} : config;
 
-        attrCaption     = 'attrCaption' in config ? config.attrCaption : "alt";
-        textPrepend     = 'textPrepend' in config ? config.textPrepend : "";
-        textAppend      = 'textAppend' in config ? config.textAppend : "";
-        transferStyle   = 'transferStyle' in config ? !!config.transferStyle : false;
-        transferCss     = 'transferCss' in config ? config.transferCss : [];
+        var attrCaption     = 'attrCaption' in config ? config.attrCaption : "alt";
+        var textPrepend     = 'textPrepend' in config ? config.textPrepend : "";
+        var textAppend      = 'textAppend' in config ? config.textAppend : "";
+        var transferStyle   = 'transferStyle' in config ? !!config.transferStyle : false;
+        var transferCss     = 'transferCss' in config ? config.transferCss : [];
 
         var textCaption = this.attr(attrCaption);
 
