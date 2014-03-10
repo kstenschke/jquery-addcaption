@@ -1,5 +1,5 @@
 /*
- * jQuery addcaption Plugin v1.0.0
+ * jQuery addcaption Plugin v1.0.1
  *
  * Adds a caption to the given image element, the caption text is grabbed from a specifiable attribute, e.g. the alt-text of the resp. image.
  *
@@ -33,7 +33,7 @@
 
         var textCaption = this.attr(attrCaption);
 
-        if( textCaption.length > 0 ) {
+        if( textCaption && textCaptiontextCaption.length > 0 ) {
             var htmlTransferAttributes;
             if(transferStyle || transferAttributes.length > 0 ) {
                 htmlTransferAttributes = " style=\"";
