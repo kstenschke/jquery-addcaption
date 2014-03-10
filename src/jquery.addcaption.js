@@ -34,7 +34,8 @@
         var textCaption = this.attr(attrCaption);
 
         if( textCaption && textCaption.length > 0 ) {
-            var htmlTransferAttributes;
+            var htmlTransferAttributes = "";
+
             if(transferStyle || transferAttributes.length > 0 ) {
                 htmlTransferAttributes = " style=\"";
                 htmlTransferAttributes += transferStyle ? this.attr("style") : "";
@@ -45,12 +46,10 @@
                     htmlTransferAttributes += curCssAttr + ":" + imageElement.css(curCssAttr) +"; ";
                 });
                 htmlTransferAttributes += "\"";
-            } else {
-                htmlTransferAttributes = "";
             }
 
             jQuery(this).wrapAll( "<figure" + htmlTransferAttributes + "></figure>");
-            jQuery("<figcaption>" + textPrepend + textCaption + " " + textAppend + "</figcaption>").insertAfter( jQuery(this) );
+            jQuery("<figcaption>" + textPrepend + textCaption + textAppend + "</figcaption>").insertAfter( jQuery(this) );
         }
     }
 }(jQuery));
