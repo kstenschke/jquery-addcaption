@@ -46,6 +46,7 @@ Author
 
 **Kay Stenschke**
 
++ info@stenschke.com
 + http://github.com/kstenschke
 
 
