@@ -32,7 +32,7 @@ Note: all configuration parameters are optional / come with a default value
 
 ```javascript
 jQuery('img').each(function(index,image) {
-          jQuery(img).addCaption({              
+          jQuery(image).addCaption({              
           attrCaption:        'alt'             // attribute in image to take caption text from, default: "alt"
           textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
           textAppend:         'Appended text',  // textPrepend and textAppend default: ""
