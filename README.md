@@ -6,6 +6,7 @@ What is it?
 
 A jQuery plugin that adds a caption to a given image element.
 
+The caption is rendered by inserting <figure> and <figcaption> tags into the DOM.
 The caption text is grabbed from a specifiable attribute, e.g. the alt-text of the resp. image.
 Optionally CSS and style attributes can be transferred from that image to the rendered figure tag.
 
