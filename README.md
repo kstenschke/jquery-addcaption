@@ -27,20 +27,26 @@ in Internet Explorer on Windows 7 for instance (because of the wrong MIME type).
 
 Usage Example
 -------------
+It is recommended to ensure images loading being finished fully before running the addcaption plugin, to ensure correct CSS attributes being around. The usage example therefor utilises the jquery images-ready plugin (https://github.com/punkave/jquery-images-ready).
 
-Note: all configuration parameters are optional / come with a default value
 
 ```javascript
-jQuery('img').each(function(index,image) {
-          jQuery(image).addCaption({              
-          attrCaption:        'alt'             // attribute in image to take caption text from, default: "alt"
-          textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
-          textAppend:         'Appended text',  // textPrepend and textAppend default: ""
-          transferStyle:      true,             // transfer the "style" attribute from the image? default: false
-          transferCss: ["width"]                // transfer given css attributes? default: []
-      });
-  });
+var images = jQuery('img');
+
+images.imagesReady(function(){
+          images.each(function(index,image) {
+                    jQuery(image).addCaption({              
+                              attrCaption:        'alt'             // attribute in image to take caption text from, default: "alt"
+                              textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
+                              textAppend:         'Appended text',  // textPrepend and textAppend default: ""
+                              transferStyle:      true,             // transfer the "style" attribute from the image? default: false
+                              transferCss: ["width"]                // transfer given css attributes? default: []
+                    });
+          });
+});
 ```
+
+Note: all configuration parameters are optional / come with a default value
 
 
 Author
