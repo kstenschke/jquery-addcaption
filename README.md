@@ -27,7 +27,7 @@ in Internet Explorer on Windows 7 for instance (because of the wrong MIME type).
 
 Usage Example
 -------------
-It is recommended to ensure images loading being finished fully before running the addcaption plugin, to ensure correct CSS attributes being around. The usage example therefor utilises the jquery images-ready plugin (https://github.com/punkave/jquery-images-ready).
+It is recommended to ensure images loading being finished fully before running the addcaption plugin, to ensure correct CSS attributes being around. The following usage example therefor utilises the jQuery images-ready plugin (https://github.com/punkave/jquery-images-ready).
 
 
 ```javascript
