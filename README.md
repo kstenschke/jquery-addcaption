@@ -4,7 +4,7 @@ jquery-addcaption
 What is it?
 -----------
 
-A jQuery plugin that adds a caption to a given image element.
+A jQuery plugin that adds image captions, with the caption text taken from existing attributes.
 
 The caption is rendered by inserting ```<figure>``` and ```<figcaption>``` tags into the DOM.
 The caption text is grabbed from a specifiable attribute, e.g. the alt-text of the resp. image.
