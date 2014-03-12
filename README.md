@@ -37,13 +37,13 @@ It is recommended to ensure images loading being finished fully before running t
 
 
 ```javascript
-var images = jQuery('img');
+var images = jQuery('a[href][rel=prettyphoto] img');
 images.imagesReady(function(){
           images.each(function(index,image) {
                     jQuery(image).addCaption({              
                               attrCaption:        'alt'             // attribute in image to take caption text from, default: "alt"
-                              textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
-                              textAppend:         'Appended text',  // textPrepend and textAppend default: ""
+                              textPrepend:        '', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
+                              textAppend:         ' (Click&nbsp;to&nbsp;enlarge)',  // textPrepend and textAppend default: ""
                               transferStyle:      true,             // transfer the "style" attribute from the image? default: false
                               transferCss:        ["width"]         // transfer given css attributes? default: []
                     });
