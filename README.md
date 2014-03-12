@@ -63,6 +63,9 @@ Author
 
 Version History
 ---------------
+* **1.0.3** *2014-03-11*
+    - Added: MIT license file
+    - Cleaned up jQuery plugin package manifest
 * **1.0.2** *2014-03-11*
     - Added: checks for undefined attributes, utilization of imagesReady-plugin into usage example.
 * **1.0.1** *2014-03-10*

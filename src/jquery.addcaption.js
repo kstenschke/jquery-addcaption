@@ -1,7 +1,7 @@
 /*
- * jQuery addcaption Plugin v1.0.2
+ * jQuery addcaption Plugin v1.0.3
  *
- * Adds a caption to the given image element, the caption text is grabbed from a specifiable attribute, e.g. the alt-text of the resp. image.
+ * Adds a caption to given image elements, with the caption text grabbed from a specifiable attribute, e.g. the alt-text of the resp. image.
  *
  * https://plugins.jquery.com/addcaption/
  * https://github.com/kstenschke/jquery-addcaption
@@ -30,7 +30,7 @@
  */
 (function($) {
     $.addcaption = {
-        version:    '1.0.2',
+        version:    '1.0.3',
         config:     {}
     };
 

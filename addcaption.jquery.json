@@ -1,9 +1,9 @@
 {
 	"name": "addcaption",
 	"title": "Add Caption",
-	"description": "jQuery plugin that adds a caption to a given images, from present attributes, e.g. the alt-text, of that image.",
+	"description": "jQuery plugin that adds a caption to given images, with text taken from present attributes, e.g. the alt-text of that image.",
 	"keywords": [ "image", "caption", "figure", "figcaption" ],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"author": {
 		"name": "Kay Stenschke",
 		"url": "https://github.com/kstenschke/jquery-addcaption/"
