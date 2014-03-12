@@ -32,7 +32,6 @@ It is recommended to ensure images loading being finished fully before running t
 
 ```javascript
 var images = jQuery('img');
-
 images.imagesReady(function(){
           images.each(function(index,image) {
                     jQuery(image).addCaption({              
@@ -53,14 +52,13 @@ Author
 ------
 
 **Kay Stenschke**
-
-+ info@stenschke.com
 + http://github.com/kstenschke
 
 
 Version History
 ---------------
-
+* **1.0.2** *2014-03-11*
+    - Added: checks for undefined attributes, utilization of imagesReady-plugin into usage example.
 * **1.0.1** *2014-03-10*
     - Bugfix: Initialization w/o apt images resulted in error
 * **1.0.0** *2014-03-10*

@@ -1,5 +1,5 @@
 /*
- * jQuery addcaption Plugin v1.0.1
+ * jQuery addcaption Plugin v1.0.2
  *
  * Adds a caption to the given image element, the caption text is grabbed from a specifiable attribute, e.g. the alt-text of the resp. image.
  *
@@ -11,19 +11,26 @@
  * http://www.opensource.org/licenses/gpl-3.0.html
  *
  * Usage Example:
- *  jQuery('img').each(function(index,image) {
- *          jQuery(img).addCaption({                // Note: all configuration parameters come with a default value and are optional.
- *          attrCaption:        'alt'               // Attribute in image to take caption text from, or default: "alt"
- *          textPrepend:        'Prepended text',   // Caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
- *          textAppend:         'Appended text',
- *          transferStyle:      true,               // Transfer the "style" attribute from the image to the caption's figure tag?
- *          transferCss: ["width"]                  // Given CSS attributes are transferred from the image to the caption's wrapping figure
- *      });
- *  });
+ * --------------
+ * It is recommended to ensure images loading being finished fully before running the addcaption plugin, to ensure correct CSS attributes being around. 
+ * The following usage example therefor utilises the jQuery images-ready plugin (https://github.com/punkave/jquery-images-ready).
+ *
+ * var images = jQuery('img');
+ * images.imagesReady(function(){
+ *           images.each(function(index,image) {
+ *                     jQuery(image).addCaption({              
+ *                               attrCaption:        'alt'             // attribute in image to take caption text from, default: "alt"
+ *                               textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
+ *                               textAppend:         'Appended text',  // textPrepend and textAppend default: ""
+ *                               transferStyle:      true,             // transfer the "style" attribute from the image? default: false
+ *                               transferCss:        ["width"]         // transfer given css attributes? default: []
+ *                     });
+ *           });
+ * });
  */
 (function($) {
     $.addcaption = {
-        version:    '1.0.1',
+        version:    '1.0.2',
         config:     {}
     };
 
