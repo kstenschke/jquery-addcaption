@@ -40,7 +40,7 @@ images.imagesReady(function(){
                               textPrepend:        'Prepended text', // caption text can be extended with prepend- and/or append-text (e.g. "click to enlarge")
                               textAppend:         'Appended text',  // textPrepend and textAppend default: ""
                               transferStyle:      true,             // transfer the "style" attribute from the image? default: false
-                              transferCss: ["width"]                // transfer given css attributes? default: []
+                              transferCss:        ["width"]                // transfer given css attributes? default: []
                     });
           });
 });
