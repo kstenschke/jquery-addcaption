@@ -43,8 +43,12 @@
 
             if(transferStyle || transferAttributes.length > 0 ) {
                 htmlTransferAttributes = " style=\"";
-                htmlTransferAttributes += transferStyle ? this.attr("style") : "";
-                htmlTransferAttributes += (htmlTransferAttributes.indexOf(";", htmlTransferAttributes.length - 1) !== -1 ) ? "" : "; ";
+                
+                var styleAttr = this.attr("style");
+                if( typeof styleAttr != "undefined" ) {
+                    htmlTransferAttributes += styleAttr;
+                    htmlTransferAttributes += (htmlTransferAttributes.length > 8 && htmlTransferAttributes.indexOf(";", htmlTransferAttributes.length - 1) !== -1 ) ? "" : ";";
+                }
 
                 var imageElement = this;
                 transferCss.each(function(curCssAttr){
