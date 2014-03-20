@@ -13,6 +13,11 @@ Optionally CSS and style attributes can be transferred from that image to the re
 __jQuery Plugin Registry:__ https://plugins.jquery.com/addcaption/
 
 
+Thanks
+------
+Thanks and regards go to Tom Boutell for sharing the jQuery images-ready plugin.
+
+
 Requirements
 ------------
 You need jQuery, of course. jquery-addcaption is actively supported from jQuery 1.9 but may work with older versions.
