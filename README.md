@@ -20,6 +20,8 @@ Thanks and regards go to Tom Boutell for sharing the jQuery images-ready plugin.
 
 Requirements
 ------------
+It is recommended (though not required) to use the addcaption plugin together with the images-ready plugin (see usage example).
+
 You need jQuery, of course. jquery-addcaption is actively supported from jQuery 1.9 but may work with older versions.
 
 
